@@ -1,5 +1,7 @@
 <sub><a href="README.md">中文</a> · <b>English</b></sub>
 
+> **Issues and PDF contributions are welcome.** This project is evolving quickly, so the current version may still have bugs or compatibility issues. Please [open an issue](https://github.com/walkinglabs/university-skill/issues) with problems or suggestions. You can also share PDF coursebooks on different subjects through issues or pull requests, along with the **LLM name and version, input prompt, output quality, generation time and actual cost**. Help us discover which models deliver the best results, which cost the least and which offer the best value. Remove personal information and API keys, and share only materials you can make public.
+
 <div align="center">
 
 # University.skill

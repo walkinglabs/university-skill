@@ -2,6 +2,8 @@
 
 [English](README_EN.md)
 
+> **欢迎提 Issue，也欢迎分享你的 PDF 课本。** 项目近期迭代较快，当前版本可能仍有疏漏或兼容性问题；遇到问题或有改进建议，欢迎[提交 Issue](https://github.com/walkinglabs/university-skill/issues)。也欢迎通过 Issue 或 PR 分享不同主题的 PDF 案例，以及你使用的 **LLM 名称与版本、输入提示词、生成效果、耗时和实际费用**，一起找出哪些模型讲得最好、哪些最便宜、哪些性价比最高。分享前请移除个人信息和 API Key，并确认材料可以公开。
+
 <div align="center">
 
 # 大学.skill
