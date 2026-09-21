@@ -215,10 +215,8 @@ university-skill/
 
 ## 灵感与致谢
 
+- [五道口纳什](https://github.com/wdkns/wdkns-skills)
 - [女娲.skill](https://github.com/alchaincyf/nuwa-skill)：README 的叙事编排与开场动效形式。
-- [达尔文.skill](https://github.com/alchaincyf/darwin-skill)：用实际任务验证改进的思路。
-- [huashu-design](https://github.com/alchaincyf/huashu-design)：开场动画的设计与导出工作流。
-- **Masterclass 两套源技能**：这套教学引擎的实际起点，详见 [溯源记录](docs/provenance.md)。
 
 当前为初始化版本，不代表大学认证或真实教授授课；教学效果仍需实际学习验证。
 
