@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>University.skill · 把大学装进 AI</title>
+<style>
+*{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#f5f5f2;color:#272b29;letter-spacing:0}
+body{display:grid;place-items:center}.stage{position:relative;width:960px;height:540px;flex-shrink:0;overflow:hidden;background:#f5f5f2;transform-origin:center;font-family:"Songti SC","Noto Serif CJK SC",Georgia,serif}
+.rule{position:absolute;inset:25px;border:1px solid #c6cbc5}.corner{position:absolute;width:13px;height:13px;border-top:1px solid #b94c37;border-left:1px solid #b94c37;top:25px;left:25px}
+.c2{left:auto;right:25px;transform:rotate(90deg)}.c3{top:auto;bottom:25px;transform:rotate(-90deg)}.c4{left:auto;top:auto;bottom:25px;right:25px;transform:rotate(180deg)}
+.brand{position:absolute;top:42px;left:0;width:100%;text-align:center;font:12px Georgia,serif;color:#6b756c}
+.term{position:absolute;text-align:center;white-space:nowrap;transform-origin:center}.term b{font-size:26px;font-weight:400}.term small{display:block;font:9px Georgia,serif;color:#b94c37;margin-top:8px}
+.book{position:absolute;left:390px;top:150px;width:180px;height:242px;transform-origin:center;z-index:3}
+.pages{position:absolute;inset:5px -7px -7px 7px;border:1px solid #748275;background:repeating-linear-gradient(0deg,#eceee8 0px,#eceee8 3px,#cbd0c6 3px,#cbd0c6 4px)}
+.cover{position:absolute;inset:0;background:#e7ece4;border:1px solid #526653;box-shadow:9px 14px 24px #263f2616;text-align:center;padding:27px 14px}
+.cover:before{content:"";position:absolute;inset:9px;border:1px solid #95a68f}.spine{position:absolute;top:0;left:10px;height:100%;width:1px;background:#9aa991}
+.edition{font:8px Georgia;color:#6d7c65}.book h2{font-size:30px;font-weight:400;line-height:1.55;margin:27px 0 12px}.book .seal{font-size:11px;color:#a74b38;border-top:1px solid #a6b19f;margin:0 18px;padding-top:14px}
+.caption{position:absolute;top:440px;width:100%;text-align:center;font-size:24px}
+.steps{position:absolute;left:470px;top:163px;width:400px}.step{border-bottom:1px solid #c4cdc2;padding:14px 0;display:flex;align-items:baseline;gap:20px}.step em{font:13px Georgia;color:#a74b38}.step strong{font-size:26px;font-weight:400}.step span{font-size:13px;color:#66735f;margin-left:auto}
+.ending{position:absolute;left:0;top:167px;width:100%;text-align:center}.ending h1{font-size:68px;line-height:1.2;font-weight:400;margin:0 0 15px}.ending h1 i{color:#a74b38;font-style:normal}.ending p{font-size:23px;margin:0 0 24px}.ending .en{font:13px Georgia;color:#66735f}.ending .prompt{margin-top:24px;font:13px "PingFang SC",sans-serif;color:#526653}
+.credit{position:absolute;right:38px;bottom:35px;font:8px Georgia;color:#81887b}.lower{position:absolute;left:40px;bottom:35px;font:9px Georgia;color:#81887b}
+</style>
+<main class="stage" id="stage" aria-label="把一位大学教授装进你的 AI，把任何主题变成一堂真正的大学课。">
+<div class="rule"></div><div class="corner"></div><div class="corner c2"></div><div class="corner c3"></div><div class="corner c4"></div>
+<div class="brand">UNIVERSITY · SKILL / 一个人的大学</div>
+<div id="terms"></div>
+<div class="book" id="book"><div class="pages"></div><div class="cover"><div class="spine"></div><div class="edition">A COURSE OF YOUR OWN</div><h2>大学<br>讲义</h2><div class="seal">直觉 · 推导 · 实践</div></div></div>
+<div class="caption" id="caption">一个主题，一堂真正的大学课。</div>
+<div class="steps" id="steps"><div class="step"><em>01</em><strong>从直觉出发</strong><span>高中知识起步</span></div><div class="step"><em>02</em><strong>把每步算透</strong><span>低维手算闭环</span></div><div class="step"><em>03</em><strong>让知识落地</strong><span>代码与严格附录</span></div></div>
+<div class="ending" id="ending"><h1>University<i>.skill</i></h1><p>把一位大学教授装进你的 AI，<br>把任何主题变成一堂真正的大学课。</p><div class="en">Put a university professor in your AI.<br>Turn any topic into a real university lecture.</div><div class="prompt">“帮我写一本 PDF 课本，从零开始，给我讲透。”</div></div>
+<div class="lower">WALKINGLABS / OPEN LEARNING</div><div class="credit">Created by Huashu-Design</div>
+</main>
+<script>
+const terms=[['注意力机制','ATTENTION',190,158,-8],['世界模型','WORLD MODELS',468,113,4],['博弈论','GAME THEORY',770,174,7],['贝叶斯推理','BAYES',181,311,-5],['具身智能','EMBODIED AI',770,329,-7],['从零到一','FIRST PRINCIPLES',317,426,5],['读懂论文','READ THE PAPER',661,428,-3]];
+const nodes=terms.map(([zh,en])=>{const el=document.createElement('div');el.className='term';const b=document.createElement('b');b.textContent='「'+zh+'」';const s=document.createElement('small');s.textContent=en;el.append(b,s);document.getElementById('terms').append(el);return el});
+const clamp=x=>Math.max(0,Math.min(1,x));
+const ease=x=>{x=clamp(x);return x===1?1:1-Math.pow(2,-10*x)};
+const fade=(t,a,b)=>clamp((t-a)/(b-a));
+const book=document.getElementById('book'),caption=document.getElementById('caption'),steps=document.getElementById('steps'),ending=document.getElementById('ending');
+function render(t){
+  const collect=ease((t-3.6)/2.1),side=ease((t-7.7)/1.5),finish=ease((t-12.4)/1.2);
+  nodes.forEach((el,i)=>{const d=terms[i],q=ease((t-3.6-i*.07)/1.6);el.style.left=(d[2]+(480-d[2])*q)+'px';el.style.top=(d[3]+(260-d[3])*q)+'px';el.style.transform='translate(-50%,-50%) rotate('+(d[4]*(1-q))+'deg) scale('+(1-q*.8)+')';el.style.opacity=1-fade(t,4.25+i*.07,5.2+i*.07)});
+  book.style.transform='translate('+(-190*side)+'px,'+(-35*finish)+'px) scale('+(0.42+0.58*collect-.06*side)+') rotate('+(-3*side)+'deg)';
+  book.style.opacity=1-finish;
+  caption.style.opacity=fade(t,5.4,6.2)*(1-fade(t,7.6,8.3));
+  [...steps.children].forEach((el,i)=>{const q=ease((t-8.1-i*.5)/.9);el.style.opacity=q*(1-finish);el.style.transform='translateY('+(24*(1-q))+'px)'});
+  ending.style.opacity=finish;ending.style.transform='translateY('+(18*(1-finish))+'px)';
+}
+function fit(){document.getElementById('stage').style.transform='scale('+Math.min(innerWidth/960,innerHeight/540)+')'}
+window.__seek=t=>render(Math.max(0,Math.min(18,t)));
+fit();addEventListener('resize',fit);render(0);window.__ready=true;
+let start;function tick(ts){if(start===undefined)start=ts;let t=(ts-start)/1000;if(window.__seekRender)return;render(window.__recording?Math.min(t,18):t%18);requestAnimationFrame(tick)}
+if(!window.__seekRender)requestAnimationFrame(tick);
+</script>
+</html>
