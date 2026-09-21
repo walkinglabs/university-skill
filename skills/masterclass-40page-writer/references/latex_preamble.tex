@@ -1,0 +1,115 @@
+% ============================================================
+% masterclass-40page-writer · 可直接复制的 LaTeX 前置模板
+% 已在 tectonic + ctexart + 中文 环境实测通过（多篇 40+ 页文章验证）
+% 用法：把本文件 \begin{document} 之前的内容整段复制为新主文件的 preamble
+% ============================================================
+
+\documentclass[11pt,a4paper]{ctexart}
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\geometry{top=2.2cm,bottom=2.2cm,left=2.5cm,right=2.5cm}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning,calc,shapes.geometric,patterns,decorations.pathreplacing,fit}
+\usepackage{listings}
+\usepackage{booktabs}
+\usepackage{tcolorbox}
+\tcbuselibrary{skins,breakable}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue!70!black,
+    citecolor=green!60!black,
+    urlcolor=blue!70!black
+}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.97,0.97,0.97}
+
+\lstset{
+    backgroundcolor=\color{backcolour},
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\small,
+    breakatwhitespace=false,
+    breaklines=true,
+    captionpos=b,
+    keepspaces=true,
+    numbers=left,
+    numbersep=5pt,
+    showspaces=false,
+    showstringspaces=false,
+    showtabs=false,
+    tabsize=2,
+    frame=single,
+    rulecolor=\color{black!20}
+}
+
+% ---- 六种教学盒子：高中生友好长文的核心装置 ----
+% 1) 卷首引语
+\newtcolorbox{quotebox}{
+    colback=gray!5!white, colframe=gray!40!black, fonttitle=\bfseries,
+    arc=2mm, boxrule=0.8pt, left=12pt, right=12pt, top=8pt, bottom=8pt
+}
+% 2) 生活类比（橙色）—— 每个元概念必须先从这里切入
+\newtcolorbox{tipbox}[1]{
+    colback=orange!4!white, colframe=orange!70!black, fonttitle=\bfseries,
+    title={#1}, arc=2mm, boxrule=0.8pt,
+    left=10pt, right=10pt, top=6pt, bottom=6pt
+}
+% 3) 想一想（黄色）—— 停下来让读者思考
+\newtcolorbox{thinkbox}{
+    colback=yellow!6!white, colframe=yellow!50!black, fonttitle=\bfseries,
+    title={想一想}, arc=2mm, boxrule=0.8pt,
+    left=10pt, right=10pt, top=6pt, bottom=6pt
+}
+% 4) 练习 / 手算（青色）—— 必须给答案
+\newtcolorbox{exbox}[1]{
+    colback=teal!4!white, colframe=teal!60!black, fonttitle=\bfseries,
+    title={#1}, arc=2mm, boxrule=0.8pt,
+    left=10pt, right=10pt, top=6pt, bottom=6pt
+}
+% 5) 本篇小结（蓝色）—— 每篇末尾必用，标题写「本篇小结（你已会什么）」
+\newtcolorbox{stepbox}[1]{
+    colback=blue!3!white, colframe=blue!60!black, fonttitle=\bfseries,
+    title={#1}, arc=2mm, boxrule=0.8pt,
+    left=10pt, right=10pt, top=6pt, bottom=6pt
+}
+% 6) 进阶数学（紫色）—— 明确标注「第一次读可跳过」
+\newtcolorbox{rigorbox}[1]{
+    colback=purple!3!white, colframe=purple!70!black, fonttitle=\bfseries,
+    title={#1}, arc=2mm, boxrule=0.8pt,
+    left=10pt, right=10pt, top=6pt, bottom=6pt
+}
+% 7) 风险警示（红色）—— 【补齐】SKILL.md 列出了 warnbox，但旧版 preamble 漏定义了，
+%    直接 \begin{warnbox}{...} 会报 Undefined control sequence 并导致 XeTeX 崩溃。
+\newtcolorbox{warnbox}[1]{
+    colback=red!4!white, colframe=red!70!black, fonttitle=\bfseries,
+    title={#1}, arc=2mm, boxrule=0.8pt,
+    left=10pt, right=10pt, top=6pt, bottom=6pt
+}
+
+\setcounter{tocdepth}{2}   % 40 页长文必须有目录
+
+\title{\textbf{\LARGE <主标题>}\\[0.5em]
+\textbf{\Large <副标题>}\\[0.5em]
+{\large —— 一本给高中生也能读懂的 40 页通识长文}}
+\author{\large 散步}
+\date{}
+
+\begin{document}
+\maketitle
+% 卷首引语（两句真实可考的名言/论文原话）
+% \begin{quotebox} ... \end{quotebox}
+\tableofcontents
+\newpage
+% \input{<parts 目录>/p1_xxx}
+\end{document}

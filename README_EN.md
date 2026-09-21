@@ -12,7 +12,7 @@
 
 Tell your AI what you want to learn. Let it teach from the foundations to the underlying principles and practical examples. Want a course you can keep? Ask it to write a PDF textbook.
 
-[中文](README.md) · [Skill](SKILL.md) · [Worked example](examples/gradient-descent.md)
+[中文](README.md) · [Deep textbook skill](skills/masterclass-textbook-writer/SKILL.md) · [40-page lecture skill](skills/masterclass-40page-writer/SKILL.md)
 
 </div>
 
@@ -27,19 +27,18 @@ Write me a PDF textbook: the development and principles of recursive self-improv
 Teach me attention from high-school mathematics. Work through every matrix calculation.
 ```
 
-Ask an Agent Skills-compatible assistant to install this repository, or clone it into its skill directory. Keep references and assets with SKILL.md. PDF production requires a Chinese-capable LaTeX installation; code verification requires the relevant runtime.
+Ask an Agent Skills-compatible assistant to install this repository. For manual installation, clone the repository and copy both directories under `skills/` into your runtime's skill directory. Each skill is self-contained with its own prompts and references. PDF production requires a Chinese-capable LaTeX installation; code verification requires the relevant runtime.
 
 ## What It Produces
 
-| Mode | Deliverable |
+| Bundled skill | Deliverable |
 | --- | --- |
-| One lecture | A complete explanation, worked example, exercises and answers |
-| Technical textbook | Approximately 25–35 pages, implementation and mathematical foundations |
-| Extended lecture notes | Approximately 40 pages, chapter sources, PDF and verification report |
+| `masterclass-textbook-writer` | A 25–35 page technical textbook with derivations, worked calculations, implementation and mathematical foundations |
+| `masterclass-40page-writer` | A roughly 40-page, high-school-accessible course with chapter sources, appendices and a compiled PDF |
 
 Page counts are targets measured after compilation. Instructions are currently Chinese; the assistant should follow the learner's requested language.
 
-The teaching engine is adapted from the maintainer's masterclass-textbook-writer and 40-page lecture-writing skills. It combines prerequisite-aware explanations, low-dimensional calculations, chapter-by-chapter writing, restrained analogies and source verification. See [provenance](docs/provenance.md).
+The repository contains the maintainer's two complete skills rather than a third wrapper skill. Together they cover prerequisite-aware explanations, low-dimensional calculations, chapter-by-chapter writing, restrained analogies and source verification.
 
 The project acknowledges [Wudaokou Nash](https://github.com/wdkns/wdkns-skills) and [nuwa-skill](https://github.com/alchaincyf/nuwa-skill) as its two sources of inspiration.
 
@@ -52,21 +51,33 @@ This repository includes complete sample textbooks, but does not claim measured 
 A 47-page, high-school-accessible textbook that progresses from atoms and protein folding to AlphaFold2, diffusion, ProteinMPNN, RFdiffusion, worked calculations, code, a glossary and self-tests.
 
 <p align="center">
-  <a href="examples/pdfs/protein-structure-design-ai4s.pdf"><img src="examples/screenshots/protein-cover.png" width="31%" alt="AI4S textbook cover and contents"></a>
-  <a href="examples/pdfs/protein-structure-design-ai4s.pdf"><img src="examples/screenshots/protein-alphafold.png" width="31%" alt="AlphaFold2 architecture explanation"></a>
-  <a href="examples/pdfs/protein-structure-design-ai4s.pdf"><img src="examples/screenshots/protein-worked-example.png" width="31%" alt="Worked three-point calculation"></a>
+  <a href="assets/samples/pdfs/protein-structure-design-ai4s.pdf"><img src="assets/samples/screenshots/protein-cover.png" width="31%" alt="AI4S textbook cover and contents"></a>
+  <a href="assets/samples/pdfs/protein-structure-design-ai4s.pdf"><img src="assets/samples/screenshots/protein-alphafold.png" width="31%" alt="AlphaFold2 architecture explanation"></a>
+  <a href="assets/samples/pdfs/protein-structure-design-ai4s.pdf"><img src="assets/samples/screenshots/protein-worked-example.png" width="31%" alt="Worked three-point calculation"></a>
 </p>
 
-**[Open the complete 47-page PDF](examples/pdfs/protein-structure-design-ai4s.pdf)**
+**[Open the complete 47-page PDF](assets/samples/pdfs/protein-structure-design-ai4s.pdf)**
 
 ### Muon Optimizer and Matrix Orthogonalization
 
 A 13-page masterclass from gradients and AdamW limitations through polar factors, Newton-Schulz iteration, PyTorch implementation and rigorous mathematical appendices.
 
 <p align="center">
-  <a href="examples/pdfs/muon-optimizer-masterclass.pdf"><img src="examples/screenshots/muon-cover.png" width="31%" alt="Muon optimizer textbook opening"></a>
-  <a href="examples/pdfs/muon-optimizer-masterclass.pdf"><img src="examples/screenshots/muon-orthogonalization.png" width="31%" alt="Geometric explanation of Muon orthogonalization"></a>
-  <a href="examples/pdfs/muon-optimizer-masterclass.pdf"><img src="examples/screenshots/muon-code.png" width="31%" alt="Newton-Schulz iteration and PyTorch code"></a>
+  <a href="assets/samples/pdfs/muon-optimizer-masterclass.pdf"><img src="assets/samples/screenshots/muon-cover.png" width="31%" alt="Muon optimizer textbook opening"></a>
+  <a href="assets/samples/pdfs/muon-optimizer-masterclass.pdf"><img src="assets/samples/screenshots/muon-orthogonalization.png" width="31%" alt="Geometric explanation of Muon orthogonalization"></a>
+  <a href="assets/samples/pdfs/muon-optimizer-masterclass.pdf"><img src="assets/samples/screenshots/muon-code.png" width="31%" alt="Newton-Schulz iteration and PyTorch code"></a>
 </p>
 
-**[Open the complete 13-page PDF](examples/pdfs/muon-optimizer-masterclass.pdf)**
+**[Open the complete 13-page PDF](assets/samples/pdfs/muon-optimizer-masterclass.pdf)**
+
+## Repository Layout
+
+```text
+university-skill/
+├── assets/                     # Hero animation, complete PDFs and screenshots
+├── skills/
+│   ├── masterclass-textbook-writer/
+│   └── masterclass-40page-writer/
+├── README.md
+└── README_EN.md
+```

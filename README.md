@@ -15,7 +15,7 @@
 > *「你想上的下一堂大学课，何必等开学。」*
 > *"Your next university lecture doesn't have to wait for a new semester."*
 
-[![Agent Skills](https://img.shields.io/badge/Agent_Skills-SKILL.md-55745c?style=flat-square)](SKILL.md)
+[![Agent Skills](https://img.shields.io/badge/Agent_Skills-2_Skills-55745c?style=flat-square)](skills)
 [![Output](https://img.shields.io/badge/Output-Markdown_·_LaTeX_·_PDF-a74b38?style=flat-square)](#你会得到什么)
 [![Language](https://img.shields.io/badge/中文-English-657580?style=flat-square)](README_EN.md)
 [![Stars](https://img.shields.io/github/stars/walkinglabs/university-skill?style=flat-square&color=55745c)](https://github.com/walkinglabs/university-skill/stargazers)
@@ -26,7 +26,7 @@
 
 **Put a university professor in your AI. Turn any topic into a real university lecture.**
 
-<sub>基于 SKILL.md 的教学技能，可安装到支持 Agent Skills 的 AI 助手中。</sub>
+<sub>内含两个可独立安装的 Agent Skills：深度技术教材 + 40 页零基础讲义。</sub>
 
 <br />
 
@@ -34,7 +34,7 @@
 告诉 AI 你想学什么，让它像一位好教授那样，从基础讲到原理，从例子讲到实践。<br />
 需要带走慢慢读，也可以直接说：**帮我写一本 PDF 课本。**
 
-[看效果](#效果示例) · [安装](#安装) · [它会怎么教](#它会怎么教) · [工作原理](#工作原理)
+[看效果](#效果示例) · [安装](#安装) · [两个 Skill 怎么选](#两个-skill-怎么选) · [工作原理](#工作原理)
 
 <br />
 
@@ -99,9 +99,7 @@
              从这一个数字例子，接着推到一般公式与代码。
 ```
 
-[阅读全文与练习](examples/gradient-descent.md) · [运行数值核验](examples/gradient_descent.py)
-
-<sub>以上对话为设计示例，展示预期教学方式；梯度下降数字由随附脚本核验，未将示例描述为已生成的完整课本。</sub>
+<sub>以上对话为使用示例，展示两个 skill 的预期教学方式。</sub>
 
 ---
 
@@ -116,14 +114,14 @@
 从原子、分子、能量和蛋白质折叠问题讲起，逐步进入 AlphaFold2、扩散模型、ProteinMPNN 与 RFdiffusion。后半部分用三个点完整手算距离、旋转等变性和扩散去噪，并给出代码、名词表与自测答案。
 
 <p align="center">
-  <a href="examples/pdfs/protein-structure-design-ai4s.pdf"><img src="examples/screenshots/protein-cover.png" width="31%" alt="蛋白质结构设计 AI4S 课本封面与目录"></a>
-  <a href="examples/pdfs/protein-structure-design-ai4s.pdf"><img src="examples/screenshots/protein-alphafold.png" width="31%" alt="课本中的 AlphaFold2 架构讲解"></a>
-  <a href="examples/pdfs/protein-structure-design-ai4s.pdf"><img src="examples/screenshots/protein-worked-example.png" width="31%" alt="课本中的三点手算章节"></a>
+  <a href="assets/samples/pdfs/protein-structure-design-ai4s.pdf"><img src="assets/samples/screenshots/protein-cover.png" width="31%" alt="蛋白质结构设计 AI4S 课本封面与目录"></a>
+  <a href="assets/samples/pdfs/protein-structure-design-ai4s.pdf"><img src="assets/samples/screenshots/protein-alphafold.png" width="31%" alt="课本中的 AlphaFold2 架构讲解"></a>
+  <a href="assets/samples/pdfs/protein-structure-design-ai4s.pdf"><img src="assets/samples/screenshots/protein-worked-example.png" width="31%" alt="课本中的三点手算章节"></a>
 </p>
 
 <p align="center"><sub>封面与课程地图 · AlphaFold2 机制图 · 从三个点开始的完整手算</sub></p>
 
-**[打开完整 PDF（47 页）](examples/pdfs/protein-structure-design-ai4s.pdf)**
+**[打开完整 PDF（47 页）](assets/samples/pdfs/protein-structure-design-ai4s.pdf)**
 
 ### Muon 优化器与矩阵正交化
 
@@ -132,14 +130,14 @@
 先建立损失、梯度、动量与 AdamW 的基础，再解释 Muon 为什么要把更新矩阵正交化。内容覆盖极分解、牛顿-舒尔茨迭代、收敛数值表、PyTorch 代码，以及从导数到最佳逼近定理的数学附录。
 
 <p align="center">
-  <a href="examples/pdfs/muon-optimizer-masterclass.pdf"><img src="examples/screenshots/muon-cover.png" width="31%" alt="Muon 优化器课本开篇"></a>
-  <a href="examples/pdfs/muon-optimizer-masterclass.pdf"><img src="examples/screenshots/muon-orthogonalization.png" width="31%" alt="Muon 矩阵正交化的几何解释"></a>
-  <a href="examples/pdfs/muon-optimizer-masterclass.pdf"><img src="examples/screenshots/muon-code.png" width="31%" alt="牛顿舒尔茨迭代与 PyTorch 代码"></a>
+  <a href="assets/samples/pdfs/muon-optimizer-masterclass.pdf"><img src="assets/samples/screenshots/muon-cover.png" width="31%" alt="Muon 优化器课本开篇"></a>
+  <a href="assets/samples/pdfs/muon-optimizer-masterclass.pdf"><img src="assets/samples/screenshots/muon-orthogonalization.png" width="31%" alt="Muon 矩阵正交化的几何解释"></a>
+  <a href="assets/samples/pdfs/muon-optimizer-masterclass.pdf"><img src="assets/samples/screenshots/muon-code.png" width="31%" alt="牛顿舒尔茨迭代与 PyTorch 代码"></a>
 </p>
 
 <p align="center"><sub>从优化器基础开始 · 矩阵正交化的几何直觉 · 数值迭代与代码实现</sub></p>
 
-**[打开完整 PDF（13 页）](examples/pdfs/muon-optimizer-masterclass.pdf)**
+**[打开完整 PDF（13 页）](assets/samples/pdfs/muon-optimizer-masterclass.pdf)**
 
 ---
 
@@ -155,17 +153,19 @@
 
 ### 方式二：手动安装
 
-将完整仓库放入所用工具的技能目录，保留 `references/` 与 `assets/`。例如在 Codex 的用户技能目录中：
+克隆仓库后，将 `skills/` 下的两个技能目录复制到所用工具的技能目录。例如在 Codex 中：
 
 ```bash
-git clone https://github.com/walkinglabs/university-skill.git ~/.codex/skills/university-skill
+git clone https://github.com/walkinglabs/university-skill.git
+cp -R university-skill/skills/masterclass-textbook-writer ~/.codex/skills/
+cp -R university-skill/skills/masterclass-40page-writer ~/.codex/skills/
 ```
 
-入口为根目录的 [SKILL.md](SKILL.md)。纯讲义写作不需要额外 API Key；PDF 需要中文 LaTeX 环境，代码验证需要相应语言与依赖。模型、联网与文件操作由宿主助手提供，具体运行时兼容性仍需验证。
+两个入口分别是 [masterclass-textbook-writer](skills/masterclass-textbook-writer/SKILL.md) 与 [masterclass-40page-writer](skills/masterclass-40page-writer/SKILL.md)。纯讲义写作不需要额外 API Key；PDF 需要中文 LaTeX 环境，代码验证需要相应语言与依赖。
 
 ### 方式三：作为参考资料使用
 
-如果助手不支持自动加载技能，可以将 [SKILL.md](SKILL.md) 与当前任务需要的关联参考文件提供给它。写长篇教材时一并提供分卷写作规范，生成 PDF 时补充排版规范和 LaTeX 模板。
+如果助手不支持自动加载技能，可以直接提供 [深度技术教材 SKILL.md](skills/masterclass-textbook-writer/SKILL.md) 或 [40 页讲义 SKILL.md](skills/masterclass-40page-writer/SKILL.md)。每个技能所需的提示词和参考文件都放在自己的目录内。
 
 ---
 
@@ -181,27 +181,25 @@ git clone https://github.com/walkinglabs/university-skill.git ~/.codex/skills/un
 
 ---
 
-## 它会怎么教
+## 两个 Skill 怎么选
 
-| 教学能力 | 它会怎样做 |
+| Skill | 什么时候用 | 核心交付 |
 | --- | --- |
-| **教授的知识路径** | 每章承接上章的问题。先理解为什么需要这个方法，再理解它怎样工作。 |
-| **教科书的推导密度** | 直觉、具体数字、正式定义逐层展开，关键步骤不藏在“显然”里。 |
-| **实验课的动手能力** | 手算给完整中间量，代码给输入与输出，运行过才写“已验证”。 |
-| **大学讲义的完整结构** | 分卷正文、解释图、阶梯附录、名词表、自测答案和来源导航一起交付。 |
+| [`masterclass-textbook-writer`](skills/masterclass-textbook-writer/SKILL.md) | 想从机制一路学到数学推导、代码和论文 | 25–35+ 页深度技术教材 |
+| [`masterclass-40page-writer`](skills/masterclass-40page-writer/SKILL.md) | 零基础入门，希望高中生也能一路读懂 | 40 页量级通识讲义与 PDF |
 
-教学内核由作者的两套 Masterclass 工作流整理而来：**masterclass-textbook-writer** 与 **40页讲义写作**。新版类比规范、分卷机制、伪代码、数值核验和排版约束均已整合。[查看来源与规则取舍](docs/provenance.md)。
+两者都遵循“直觉 → 低维手算 → 严格定义 → 实现与边界”的教授式教学路径，并带齐自身需要的提示词、排版规范和参考文件。
 
 ---
 
 ## 你会得到什么
 
-| | 一堂大学课 | 深度技术教材 | 40 页通识讲义 |
-| --- | --- | --- | --- |
-| 适用 | 讲透一个问题 | 从机制走到实现 | 从零建立领域地图 |
-| 体量 | 按目标收敛 | 约 25–35 页 | 约 40 页 |
-| 主线 | 直觉、例子、推导 | 方法、手算、实现、边界 | 六卷递进，附录四件套 |
-| 产物 | Markdown，可选 PDF | 讲义、源码、示例 | 分卷源码、PDF、验证记录 |
+| | 深度技术教材 | 40 页通识讲义 |
+| --- | --- | --- |
+| 适用 | 从机制走到实现、论文与严格数学 | 从零建立完整领域地图 |
+| 体量 | 约 25–35+ 页 | 约 40 页 |
+| 主线 | 方法、手算、实现、边界 | 六卷递进，附录四件套 |
+| 产物 | LaTeX / PDF / Markdown、代码与推导 | 分卷 LaTeX、PDF、自测与来源导航 |
 
 <sub>页数为写作目标，以最终编译结果为准。非技术主题使用案例、史料与论证，不强行加入数学或代码。</sub>
 
@@ -229,14 +227,12 @@ git clone https://github.com/walkinglabs/university-skill.git ~/.codex/skills/un
 
 ```text
 university-skill/
-├── SKILL.md                    # 教学引擎入口
-├── references/                 # 教学法、分卷写作与排版规范
-├── assets/                     # 开场动画与 LaTeX 模板
-├── examples/
-│   ├── pdfs/                   # 可直接阅读的完整课本
-│   └── screenshots/            # README 中的代表页截图
-├── evals/                      # 行为评估场景
-├── docs/                       # 设计溯源与验证记录
+├── assets/
+│   ├── hero.gif                # README 开场动画
+│   └── samples/                # 完整 PDF 与代表页截图
+├── skills/
+│   ├── masterclass-textbook-writer/
+│   └── masterclass-40page-writer/
 ├── README.md                   # 中文介绍
 └── README_EN.md                # English
 ```
@@ -249,7 +245,7 @@ university-skill/
 
 带上主题、基础和那一段讲解，提交 [Issue](https://github.com/walkinglabs/university-skill/issues)。贡献新的手算示例、纠正推导、检验代码，或用一个新主题测试教学流程。
 
-[贡献指南](CONTRIBUTING.md) · [行为评估](evals/README.md) · [动画源文件](assets/hero.html)
+[提交 Issue](https://github.com/walkinglabs/university-skill/issues) · [动画源文件](assets/hero.html) · [两个 Skills](skills)
 
 ---
 
