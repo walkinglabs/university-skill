@@ -1,4 +1,6 @@
-<sub><b>中文</b> · <a href="README_EN.md">English</a></sub>
+**其他语言 / Other Languages:**
+
+[English](README_EN.md)
 
 <div align="center">
 
@@ -33,12 +35,6 @@
 需要带走慢慢读，也可以直接说：**帮我写一本 PDF 课本。**
 
 [看效果](#效果示例) · [安装](#安装) · [两个 Skill 怎么选](#两个-skill-怎么选) · [工作原理](#工作原理)
-
-<br />
-
-**其他语言 / Other Languages:**
-
-[English](README_EN.md)
 
 <br />
 
