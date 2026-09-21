@@ -8,8 +8,6 @@
   <img src="assets/hero.gif" width="800" alt="把一位大学教授装进你的 AI，把任何主题变成一堂真正的大学课。" />
   <br />
   <sub>动画由 <a href="https://github.com/alchaincyf/huashu-design">huashu-design</a> skill 制作</sub>
-  <br />
-  <sub>18 秒 · <a href="assets/hero.html">HTML 动画源文件</a> · <a href="assets/hero.mp4">MP4 视频</a></sub>
 </p>
 
 > *「你想上的下一堂大学课，何必等开学。」*
