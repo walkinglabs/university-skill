@@ -1,4 +1,4 @@
-# LaTeX 数学附录与硬核推导 Subagent 提示词模板（阶梯 0→1→2 极度详尽推导版 v1.0）
+# University Textbook · Math Appendix Guide
 
 <!--
 【模板定位】

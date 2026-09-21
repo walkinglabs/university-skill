@@ -1,11 +1,11 @@
 ---
-name: masterclass-40page-writer
+name: university-coursebook
 description: 生成 40 页量级、高中生也能读懂的中文技术通识长文（LaTeX/PDF）。核心约束：类比是稀缺资源，只给「高中生第一次见会懵」的难点概念，且多个难点讲完后集中放在一个 tipbox 里；正文采用克制、专业的大学讲义语气；附带中文 LaTeX 编译约束、TikZ 防出界规则、DOI 核实纪律与附录四件套规范。适用于 AI4S、具身智能、计算化学等硬核主题的科普化长文。
 ---
 
-# Masterclass 40 页通识长文写作引擎（中文修订版 v2）
+# University Coursebook · 40 页零基础课本
 
-> 本版为 `masterclass-40page-writer` 的修订版（2026-08-29 中文命名）。主要变化：① 类比只给难点、可集中打包；② 盒标题禁用元描述；③ 新增「语气：Stanford 讲义风」规范；④ 编译约束扩充到 19 条。
+> 面向从零入门的长篇课程：类比只给难点，正文保持克制的大学讲义语气，并以可编译 PDF 完成交付。
 
 ## 这个技能解决什么问题
 
@@ -69,7 +69,7 @@ mkdir -p <文章目录>/<主题>_parts
 
 ### ⑤ 主文件拼装
 
-主文件只放 preamble + 目录 + 一串 `\input`，**不放正文**（见 `references/latex_preamble.tex`）。
+主文件只放 preamble + 目录 + 一串 `\input`，**不放正文**（见 `assets/latex-template.tex`）。
 
 ### ⑥ 编译与自修复
 
@@ -260,7 +260,7 @@ print("pages:", c)
 | AI4S 蛋白质结构设计课本 | 47 | 6 part，附录含名词表与自测题；完整 PDF 见仓库 `assets/samples/pdfs/` |
 | `cyp450_qmmm_masterclass.tex` | 42 | 6 part + `cyp450_parts/`，**24 条已核实 DOI**，纯标准库可跑代码 |
 | `ai4s_protein_design_masterclass.tex` | 14 | 单文件版（旧风格），可作反面参照 |
-| `../masterclass-textbook-writer/` | — | 配套技能：偏 LaTeX/顶会伪代码规范；本技能偏「科普化长文 + 分卷拼装」 |
+| `../university-textbook/` | — | 配套技能：偏 LaTeX/顶会伪代码规范；本技能偏「科普化长文 + 分卷拼装」 |
 
 **目录约定**
 
@@ -326,9 +326,9 @@ generated_content/
 
 ## 配套资源
 
-- 正式撰写前，读取 [40 页主内容模板](prompt_主内容_v1_40page.md)。
-- 需要机制图、流程图或 TikZ 图时，读取 [LaTeX 作图模板](prompt_latex_作图提示词模板_subagent.md)。
-- 创建主文件时复用 [LaTeX preamble](references/latex_preamble.tex)。
-- 编译和交付前，读取 [编译硬约束清单](references/编译硬约束清单.md)。
+- 正式撰写前，读取 [写作指南](references/writing-guide.md)。
+- 需要机制图、流程图或 TikZ 图时，读取 [图解指南](references/diagram-guide.md)。
+- 创建主文件时复用 [LaTeX 模板](assets/latex-template.tex)。
+- 编译和交付前，读取 [LaTeX 检查清单](references/latex-checklist.md)。
 
 这些文件都属于本技能，安装时必须与 `SKILL.md` 一起保留。

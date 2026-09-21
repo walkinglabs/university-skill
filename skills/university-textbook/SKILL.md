@@ -1,9 +1,9 @@
 ---
-name: masterclass-textbook-writer
-description: 极深学术密度与高中生数理认知友好的深度学习/具身智能教程大师写作引擎。采用分卷/分章节流水线调度（Multi-Stage Chunked Pipeline）、LaTeX 顶会伪代码规范（algorithmic）与防出界 TikZ 矢量配图标准，生成 25-35+ 页可直接编译的高质量教程级 LaTeX/PDF 与 Markdown 讲义。
+name: university-textbook
+description: 创建 25–35+ 页、高学术密度且对高中数理基础友好的技术教材。采用分卷写作、逐步手算、LaTeX 学术伪代码、TikZ 机制图和可运行实现，交付可编译的 LaTeX/PDF 与 Markdown。适用于深度学习、具身智能及需要从原理讲到实现的技术主题。
 ---
 
-# Masterclass 深度教科书写作与分卷流水线调度技能
+# University Textbook · 深度技术教材
 
 本技能沉淀了世界顶级的深度学习与具身智能机器人教科书教程撰写全流程规范，旨在解决长篇学术讲义编写中的“篇幅被压缩、跳步推导、代码简略、排版溢出”等瓶颈，实现兼具费曼大白话启发力、高中数理认知脚手架、微观纯手工演算、可运行端到端代码和严格数学附录的高质量长篇教程输出。
 
@@ -74,8 +74,8 @@ description: 极深学术密度与高中生数理认知友好的深度学习/具
 
 ## 配套资源
 
-- 撰写主线正文前，读取 [主内容模板](prompt_主内容_v7_masterclass.md)。
-- 需要 TikZ 机制图时，读取 [LaTeX 作图模板](prompt_latex_作图提示词模板_subagent.md)。
-- 需要严格数学附录时，读取 [数学附录模板](prompt_数学附录提示词模板_subagent.md)。
+- 撰写主线正文前，读取 [写作指南](references/writing-guide.md)。
+- 需要 TikZ 机制图时，读取 [图解指南](references/diagram-guide.md)。
+- 需要严格数学附录时，读取 [数学附录指南](references/math-appendix-guide.md)。
 
 这些文件与 `SKILL.md` 位于同一技能目录，安装时必须一起保留。

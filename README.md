@@ -114,14 +114,14 @@
 从原子、分子、能量和蛋白质折叠问题讲起，逐步进入 AlphaFold2、扩散模型、ProteinMPNN 与 RFdiffusion。后半部分用三个点完整手算距离、旋转等变性和扩散去噪，并给出代码、名词表与自测答案。
 
 <p align="center">
-  <a href="assets/samples/pdfs/protein-structure-design-ai4s.pdf"><img src="assets/samples/screenshots/protein-cover.png" width="31%" alt="蛋白质结构设计 AI4S 课本封面与目录"></a>
-  <a href="assets/samples/pdfs/protein-structure-design-ai4s.pdf"><img src="assets/samples/screenshots/protein-alphafold.png" width="31%" alt="课本中的 AlphaFold2 架构讲解"></a>
-  <a href="assets/samples/pdfs/protein-structure-design-ai4s.pdf"><img src="assets/samples/screenshots/protein-worked-example.png" width="31%" alt="课本中的三点手算章节"></a>
+  <a href="assets/samples/pdfs/ai4s-protein-design.pdf"><img src="assets/samples/screenshots/ai4s-cover.png" width="31%" alt="蛋白质结构设计 AI4S 课本封面与目录"></a>
+  <a href="assets/samples/pdfs/ai4s-protein-design.pdf"><img src="assets/samples/screenshots/ai4s-alphafold.png" width="31%" alt="课本中的 AlphaFold2 架构讲解"></a>
+  <a href="assets/samples/pdfs/ai4s-protein-design.pdf"><img src="assets/samples/screenshots/ai4s-worked-example.png" width="31%" alt="课本中的三点手算章节"></a>
 </p>
 
 <p align="center"><sub>封面与课程地图 · AlphaFold2 机制图 · 从三个点开始的完整手算</sub></p>
 
-**[打开完整 PDF（47 页）](assets/samples/pdfs/protein-structure-design-ai4s.pdf)**
+**[打开完整 PDF（47 页）](assets/samples/pdfs/ai4s-protein-design.pdf)**
 
 ### Muon 优化器与矩阵正交化
 
@@ -130,14 +130,14 @@
 先建立损失、梯度、动量与 AdamW 的基础，再解释 Muon 为什么要把更新矩阵正交化。内容覆盖极分解、牛顿-舒尔茨迭代、收敛数值表、PyTorch 代码，以及从导数到最佳逼近定理的数学附录。
 
 <p align="center">
-  <a href="assets/samples/pdfs/muon-optimizer-masterclass.pdf"><img src="assets/samples/screenshots/muon-cover.png" width="31%" alt="Muon 优化器课本开篇"></a>
-  <a href="assets/samples/pdfs/muon-optimizer-masterclass.pdf"><img src="assets/samples/screenshots/muon-orthogonalization.png" width="31%" alt="Muon 矩阵正交化的几何解释"></a>
-  <a href="assets/samples/pdfs/muon-optimizer-masterclass.pdf"><img src="assets/samples/screenshots/muon-code.png" width="31%" alt="牛顿舒尔茨迭代与 PyTorch 代码"></a>
+  <a href="assets/samples/pdfs/muon-optimizer.pdf"><img src="assets/samples/screenshots/muon-cover.png" width="31%" alt="Muon 优化器课本开篇"></a>
+  <a href="assets/samples/pdfs/muon-optimizer.pdf"><img src="assets/samples/screenshots/muon-orthogonalization.png" width="31%" alt="Muon 矩阵正交化的几何解释"></a>
+  <a href="assets/samples/pdfs/muon-optimizer.pdf"><img src="assets/samples/screenshots/muon-code.png" width="31%" alt="牛顿舒尔茨迭代与 PyTorch 代码"></a>
 </p>
 
 <p align="center"><sub>从优化器基础开始 · 矩阵正交化的几何直觉 · 数值迭代与代码实现</sub></p>
 
-**[打开完整 PDF（13 页）](assets/samples/pdfs/muon-optimizer-masterclass.pdf)**
+**[打开完整 PDF（13 页）](assets/samples/pdfs/muon-optimizer.pdf)**
 
 ---
 
@@ -157,15 +157,15 @@
 
 ```bash
 git clone https://github.com/walkinglabs/university-skill.git
-cp -R university-skill/skills/masterclass-textbook-writer ~/.codex/skills/
-cp -R university-skill/skills/masterclass-40page-writer ~/.codex/skills/
+cp -R university-skill/skills/university-textbook ~/.codex/skills/
+cp -R university-skill/skills/university-coursebook ~/.codex/skills/
 ```
 
-两个入口分别是 [masterclass-textbook-writer](skills/masterclass-textbook-writer/SKILL.md) 与 [masterclass-40page-writer](skills/masterclass-40page-writer/SKILL.md)。纯讲义写作不需要额外 API Key；PDF 需要中文 LaTeX 环境，代码验证需要相应语言与依赖。
+两个入口分别是 [university-textbook](skills/university-textbook/SKILL.md) 与 [university-coursebook](skills/university-coursebook/SKILL.md)。纯讲义写作不需要额外 API Key；PDF 需要中文 LaTeX 环境，代码验证需要相应语言与依赖。
 
 ### 方式三：作为参考资料使用
 
-如果助手不支持自动加载技能，可以直接提供 [深度技术教材 SKILL.md](skills/masterclass-textbook-writer/SKILL.md) 或 [40 页讲义 SKILL.md](skills/masterclass-40page-writer/SKILL.md)。每个技能所需的提示词和参考文件都放在自己的目录内。
+如果助手不支持自动加载技能，可以直接提供 [深度技术教材 SKILL.md](skills/university-textbook/SKILL.md) 或 [40 页课本 SKILL.md](skills/university-coursebook/SKILL.md)。每个技能所需的指南和模板都放在自己的目录内。
 
 ---
 
@@ -185,8 +185,8 @@ cp -R university-skill/skills/masterclass-40page-writer ~/.codex/skills/
 
 | Skill | 什么时候用 | 核心交付 |
 | --- | --- |
-| [`masterclass-textbook-writer`](skills/masterclass-textbook-writer/SKILL.md) | 想从机制一路学到数学推导、代码和论文 | 25–35+ 页深度技术教材 |
-| [`masterclass-40page-writer`](skills/masterclass-40page-writer/SKILL.md) | 零基础入门，希望高中生也能一路读懂 | 40 页量级通识讲义与 PDF |
+| [`university-textbook`](skills/university-textbook/SKILL.md) | 想从机制一路学到数学推导、代码和论文 | 25–35+ 页深度技术教材 |
+| [`university-coursebook`](skills/university-coursebook/SKILL.md) | 零基础入门，希望高中生也能一路读懂 | 40 页量级通识课本与 PDF |
 
 两者都遵循“直觉 → 低维手算 → 严格定义 → 实现与边界”的教授式教学路径，并带齐自身需要的提示词、排版规范和参考文件。
 
@@ -231,8 +231,8 @@ university-skill/
 │   ├── hero.gif                # README 开场动画
 │   └── samples/                # 完整 PDF 与代表页截图
 ├── skills/
-│   ├── masterclass-textbook-writer/
-│   └── masterclass-40page-writer/
+│   ├── university-textbook/
+│   └── university-coursebook/
 ├── README.md                   # 中文介绍
 └── README_EN.md                # English
 ```

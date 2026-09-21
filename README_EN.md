@@ -12,7 +12,7 @@
 
 Tell your AI what you want to learn. Let it teach from the foundations to the underlying principles and practical examples. Want a course you can keep? Ask it to write a PDF textbook.
 
-[中文](README.md) · [Deep textbook skill](skills/masterclass-textbook-writer/SKILL.md) · [40-page lecture skill](skills/masterclass-40page-writer/SKILL.md)
+[中文](README.md) · [University Textbook](skills/university-textbook/SKILL.md) · [University Coursebook](skills/university-coursebook/SKILL.md)
 
 </div>
 
@@ -33,8 +33,8 @@ Ask an Agent Skills-compatible assistant to install this repository. For manual 
 
 | Bundled skill | Deliverable |
 | --- | --- |
-| `masterclass-textbook-writer` | A 25–35 page technical textbook with derivations, worked calculations, implementation and mathematical foundations |
-| `masterclass-40page-writer` | A roughly 40-page, high-school-accessible course with chapter sources, appendices and a compiled PDF |
+| `university-textbook` | A 25–35 page technical textbook with derivations, worked calculations, implementation and mathematical foundations |
+| `university-coursebook` | A roughly 40-page, high-school-accessible coursebook with chapter sources, appendices and a compiled PDF |
 
 Page counts are targets measured after compilation. Instructions are currently Chinese; the assistant should follow the learner's requested language.
 
@@ -51,24 +51,24 @@ This repository includes complete sample textbooks, but does not claim measured 
 A 47-page, high-school-accessible textbook that progresses from atoms and protein folding to AlphaFold2, diffusion, ProteinMPNN, RFdiffusion, worked calculations, code, a glossary and self-tests.
 
 <p align="center">
-  <a href="assets/samples/pdfs/protein-structure-design-ai4s.pdf"><img src="assets/samples/screenshots/protein-cover.png" width="31%" alt="AI4S textbook cover and contents"></a>
-  <a href="assets/samples/pdfs/protein-structure-design-ai4s.pdf"><img src="assets/samples/screenshots/protein-alphafold.png" width="31%" alt="AlphaFold2 architecture explanation"></a>
-  <a href="assets/samples/pdfs/protein-structure-design-ai4s.pdf"><img src="assets/samples/screenshots/protein-worked-example.png" width="31%" alt="Worked three-point calculation"></a>
+  <a href="assets/samples/pdfs/ai4s-protein-design.pdf"><img src="assets/samples/screenshots/ai4s-cover.png" width="31%" alt="AI4S textbook cover and contents"></a>
+  <a href="assets/samples/pdfs/ai4s-protein-design.pdf"><img src="assets/samples/screenshots/ai4s-alphafold.png" width="31%" alt="AlphaFold2 architecture explanation"></a>
+  <a href="assets/samples/pdfs/ai4s-protein-design.pdf"><img src="assets/samples/screenshots/ai4s-worked-example.png" width="31%" alt="Worked three-point calculation"></a>
 </p>
 
-**[Open the complete 47-page PDF](assets/samples/pdfs/protein-structure-design-ai4s.pdf)**
+**[Open the complete 47-page PDF](assets/samples/pdfs/ai4s-protein-design.pdf)**
 
 ### Muon Optimizer and Matrix Orthogonalization
 
 A 13-page masterclass from gradients and AdamW limitations through polar factors, Newton-Schulz iteration, PyTorch implementation and rigorous mathematical appendices.
 
 <p align="center">
-  <a href="assets/samples/pdfs/muon-optimizer-masterclass.pdf"><img src="assets/samples/screenshots/muon-cover.png" width="31%" alt="Muon optimizer textbook opening"></a>
-  <a href="assets/samples/pdfs/muon-optimizer-masterclass.pdf"><img src="assets/samples/screenshots/muon-orthogonalization.png" width="31%" alt="Geometric explanation of Muon orthogonalization"></a>
-  <a href="assets/samples/pdfs/muon-optimizer-masterclass.pdf"><img src="assets/samples/screenshots/muon-code.png" width="31%" alt="Newton-Schulz iteration and PyTorch code"></a>
+  <a href="assets/samples/pdfs/muon-optimizer.pdf"><img src="assets/samples/screenshots/muon-cover.png" width="31%" alt="Muon optimizer textbook opening"></a>
+  <a href="assets/samples/pdfs/muon-optimizer.pdf"><img src="assets/samples/screenshots/muon-orthogonalization.png" width="31%" alt="Geometric explanation of Muon orthogonalization"></a>
+  <a href="assets/samples/pdfs/muon-optimizer.pdf"><img src="assets/samples/screenshots/muon-code.png" width="31%" alt="Newton-Schulz iteration and PyTorch code"></a>
 </p>
 
-**[Open the complete 13-page PDF](assets/samples/pdfs/muon-optimizer-masterclass.pdf)**
+**[Open the complete 13-page PDF](assets/samples/pdfs/muon-optimizer.pdf)**
 
 ## Repository Layout
 
@@ -76,8 +76,8 @@ A 13-page masterclass from gradients and AdamW limitations through polar factors
 university-skill/
 ├── assets/                     # Hero animation, complete PDFs and screenshots
 ├── skills/
-│   ├── masterclass-textbook-writer/
-│   └── masterclass-40page-writer/
+│   ├── university-textbook/
+│   └── university-coursebook/
 ├── README.md
 └── README_EN.md
 ```

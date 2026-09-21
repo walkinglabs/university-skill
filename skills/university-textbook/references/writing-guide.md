@@ -1,4 +1,4 @@
-# 经典深度学习与具身智能教科书教程生成器提示词模板 - 主内容（v7.0 Masterclass 教程典藏分卷流水线与顶会伪代码标准版）
+# University Textbook · Writing Guide
 
 <!--
 【模板调试与校验档案 / Debug & Calibration Provenance】

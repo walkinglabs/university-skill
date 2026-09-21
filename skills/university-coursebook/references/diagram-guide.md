@@ -1,4 +1,4 @@
-# TikZ 作图 Subagent 提示词模板
+# University Coursebook · Diagram Guide
 
 > **何时使用**：在 40 页长文中**画任何一幅 TikZ 配图之前**，把本文件的规则交给（或自己套用给）作图的 Subagent / 生成步骤。
 > **为什么需要单独一份**：配图是最容易崩溃、最容易出界、也最容易拖慢进度的环节。把规则固化下来，可以避免每次都重新 debug。
