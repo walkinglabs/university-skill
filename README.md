@@ -1,3 +1,5 @@
+<sub><b>中文</b> · <a href="README_EN.md">English</a></sub>
+
 <div align="center">
 
 # 大学.skill
@@ -6,9 +8,12 @@
   <img src="assets/hero.gif" width="800" alt="把一位大学教授装进你的 AI，把任何主题变成一堂真正的大学课。" />
   <br />
   <sub>动画由 <a href="https://github.com/alchaincyf/huashu-design">huashu-design</a> skill 制作</sub>
+  <br />
+  <sub>18 秒 · <a href="assets/hero.html">HTML 动画源文件</a> · <a href="assets/hero.mp4">MP4 视频</a></sub>
 </p>
 
 > *「你想上的下一堂大学课，何必等开学。」*
+> *"Your next university lecture doesn't have to wait for a new semester."*
 
 [![Agent Skills](https://img.shields.io/badge/Agent_Skills-SKILL.md-55745c?style=flat-square)](SKILL.md)
 [![Output](https://img.shields.io/badge/Output-Markdown_·_LaTeX_·_PDF-a74b38?style=flat-square)](#你会得到什么)
@@ -120,7 +125,13 @@ git clone https://github.com/walkinglabs/university-skill.git ~/.codex/skills/un
 
 入口为根目录的 [SKILL.md](SKILL.md)。纯讲义写作不需要额外 API Key；PDF 需要中文 LaTeX 环境，代码验证需要相应语言与依赖。模型、联网与文件操作由宿主助手提供，具体运行时兼容性仍需验证。
 
-### 开始上课
+### 方式三：作为参考资料使用
+
+如果助手不支持自动加载技能，可以将 [SKILL.md](SKILL.md) 与当前任务需要的关联参考文件提供给它。写长篇教材时一并提供分卷写作规范，生成 PDF 时补充排版规范和 LaTeX 模板。
+
+---
+
+### 使用
 
 ```text
 帮我写一本 PDF 课本：从零入门蛋白质结构预测与设计 AI4S。
@@ -134,36 +145,12 @@ git clone https://github.com/walkinglabs/university-skill.git ~/.codex/skills/un
 
 ## 它会怎么教
 
-<table>
-<tr>
-<td width="50%" valign="top">
-
-### 01 · 教授的知识路径
-每章承接上章的问题。先知道为什么需要这个方法，再理解它怎样工作。
-
-</td>
-<td width="50%" valign="top">
-
-### 02 · 教科书的推导密度
-直觉、具体数字、正式定义逐层展开。关键步骤不藏在“显然”里。
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-### 03 · 实验课的动手能力
-手算给完整中间量，代码给输入与输出。运行过才写“已验证”。
-
-</td>
-<td valign="top">
-
-### 04 · 大学讲义的完整结构
-分卷正文、解释图、阶梯附录、名词表、自测答案和来源导航一起交付。
-
-</td>
-</tr>
-</table>
+| 教学能力 | 它会怎样做 |
+| --- | --- |
+| **教授的知识路径** | 每章承接上章的问题。先理解为什么需要这个方法，再理解它怎样工作。 |
+| **教科书的推导密度** | 直觉、具体数字、正式定义逐层展开，关键步骤不藏在“显然”里。 |
+| **实验课的动手能力** | 手算给完整中间量，代码给输入与输出，运行过才写“已验证”。 |
+| **大学讲义的完整结构** | 分卷正文、解释图、阶梯附录、名词表、自测答案和来源导航一起交付。 |
 
 教学内核由作者的两套 Masterclass 工作流整理而来：**masterclass-textbook-writer** 与 **40页讲义写作**。新版类比规范、分卷机制、伪代码、数值核验和排版约束均已整合。[查看来源与规则取舍](docs/provenance.md)。
 
@@ -200,7 +187,23 @@ git clone https://github.com/walkinglabs/university-skill.git ~/.codex/skills/un
 
 ---
 
-## 一起把课讲好
+## 仓库结构
+
+```text
+university-skill/
+├── SKILL.md                    # 教学引擎入口
+├── references/                 # 教学法、分卷写作与排版规范
+├── assets/                     # 开场动画与 LaTeX 模板
+├── examples/                   # 示例课程与可运行的手算核验
+├── evals/                      # 行为评估场景
+├── docs/                       # 设计溯源与验证记录
+├── README.md                   # 中文介绍
+└── README_EN.md                # English
+```
+
+---
+
+## 贡献与社区
 
 最有价值的反馈是一句：“我在这一步没跟上。”
 

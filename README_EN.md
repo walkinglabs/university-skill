@@ -1,3 +1,5 @@
+<sub><a href="README.md">中文</a> · <b>English</b></sub>
+
 <div align="center">
 
 # University.skill
