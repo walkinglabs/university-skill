@@ -105,6 +105,44 @@
 
 ---
 
+## 成品 PDF 示例
+
+下面两份是这套教学方法产出的真实课本，可直接下载阅读。截图展示的不是单独设计的宣传页，而是 PDF 内页。
+
+### 从零开始懂 AI4S：蛋白质结构预测与设计
+
+**47 页 · A4 · 面向只有高中生物和数学基础的读者**
+
+从原子、分子、能量和蛋白质折叠问题讲起，逐步进入 AlphaFold2、扩散模型、ProteinMPNN 与 RFdiffusion。后半部分用三个点完整手算距离、旋转等变性和扩散去噪，并给出代码、名词表与自测答案。
+
+<p align="center">
+  <a href="examples/pdfs/protein-structure-design-ai4s.pdf"><img src="examples/screenshots/protein-cover.png" width="31%" alt="蛋白质结构设计 AI4S 课本封面与目录"></a>
+  <a href="examples/pdfs/protein-structure-design-ai4s.pdf"><img src="examples/screenshots/protein-alphafold.png" width="31%" alt="课本中的 AlphaFold2 架构讲解"></a>
+  <a href="examples/pdfs/protein-structure-design-ai4s.pdf"><img src="examples/screenshots/protein-worked-example.png" width="31%" alt="课本中的三点手算章节"></a>
+</p>
+
+<p align="center"><sub>封面与课程地图 · AlphaFold2 机制图 · 从三个点开始的完整手算</sub></p>
+
+**[打开完整 PDF（47 页）](examples/pdfs/protein-structure-design-ai4s.pdf)**
+
+### Muon 优化器与矩阵正交化
+
+**13 页 · A4 · 从优化器基础走到前沿算法与严格数学**
+
+先建立损失、梯度、动量与 AdamW 的基础，再解释 Muon 为什么要把更新矩阵正交化。内容覆盖极分解、牛顿-舒尔茨迭代、收敛数值表、PyTorch 代码，以及从导数到最佳逼近定理的数学附录。
+
+<p align="center">
+  <a href="examples/pdfs/muon-optimizer-masterclass.pdf"><img src="examples/screenshots/muon-cover.png" width="31%" alt="Muon 优化器课本开篇"></a>
+  <a href="examples/pdfs/muon-optimizer-masterclass.pdf"><img src="examples/screenshots/muon-orthogonalization.png" width="31%" alt="Muon 矩阵正交化的几何解释"></a>
+  <a href="examples/pdfs/muon-optimizer-masterclass.pdf"><img src="examples/screenshots/muon-code.png" width="31%" alt="牛顿舒尔茨迭代与 PyTorch 代码"></a>
+</p>
+
+<p align="center"><sub>从优化器基础开始 · 矩阵正交化的几何直觉 · 数值迭代与代码实现</sub></p>
+
+**[打开完整 PDF（13 页）](examples/pdfs/muon-optimizer-masterclass.pdf)**
+
+---
+
 ## 安装
 
 ### 方式一：一句话安装
@@ -194,7 +232,9 @@ university-skill/
 ├── SKILL.md                    # 教学引擎入口
 ├── references/                 # 教学法、分卷写作与排版规范
 ├── assets/                     # 开场动画与 LaTeX 模板
-├── examples/                   # 示例课程与可运行的手算核验
+├── examples/
+│   ├── pdfs/                   # 可直接阅读的完整课本
+│   └── screenshots/            # README 中的代表页截图
 ├── evals/                      # 行为评估场景
 ├── docs/                       # 设计溯源与验证记录
 ├── README.md                   # 中文介绍

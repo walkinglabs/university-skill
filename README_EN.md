@@ -41,6 +41,32 @@ Page counts are targets measured after compilation. Instructions are currently C
 
 The teaching engine is adapted from the maintainer's masterclass-textbook-writer and 40-page lecture-writing skills. It combines prerequisite-aware explanations, low-dimensional calculations, chapter-by-chapter writing, restrained analogies and source verification. See [provenance](docs/provenance.md).
 
-The README presentation follows [nuwa-skill](https://github.com/alchaincyf/nuwa-skill); evaluation is inspired by [darwin-skill](https://github.com/alchaincyf/darwin-skill). The opening animation was made using [huashu-design](https://github.com/alchaincyf/huashu-design).
+The project acknowledges [Wudaokou Nash](https://github.com/wdkns/wdkns-skills) and [nuwa-skill](https://github.com/alchaincyf/nuwa-skill) as its two sources of inspiration.
 
-This is an initial release with designed examples, not a measured learning-outcomes study or university accreditation.
+This repository includes complete sample textbooks, but does not claim measured learning outcomes or university accreditation.
+
+## Complete PDF Samples
+
+### Protein Structure Prediction and Design with AI4S
+
+A 47-page, high-school-accessible textbook that progresses from atoms and protein folding to AlphaFold2, diffusion, ProteinMPNN, RFdiffusion, worked calculations, code, a glossary and self-tests.
+
+<p align="center">
+  <a href="examples/pdfs/protein-structure-design-ai4s.pdf"><img src="examples/screenshots/protein-cover.png" width="31%" alt="AI4S textbook cover and contents"></a>
+  <a href="examples/pdfs/protein-structure-design-ai4s.pdf"><img src="examples/screenshots/protein-alphafold.png" width="31%" alt="AlphaFold2 architecture explanation"></a>
+  <a href="examples/pdfs/protein-structure-design-ai4s.pdf"><img src="examples/screenshots/protein-worked-example.png" width="31%" alt="Worked three-point calculation"></a>
+</p>
+
+**[Open the complete 47-page PDF](examples/pdfs/protein-structure-design-ai4s.pdf)**
+
+### Muon Optimizer and Matrix Orthogonalization
+
+A 13-page masterclass from gradients and AdamW limitations through polar factors, Newton-Schulz iteration, PyTorch implementation and rigorous mathematical appendices.
+
+<p align="center">
+  <a href="examples/pdfs/muon-optimizer-masterclass.pdf"><img src="examples/screenshots/muon-cover.png" width="31%" alt="Muon optimizer textbook opening"></a>
+  <a href="examples/pdfs/muon-optimizer-masterclass.pdf"><img src="examples/screenshots/muon-orthogonalization.png" width="31%" alt="Geometric explanation of Muon orthogonalization"></a>
+  <a href="examples/pdfs/muon-optimizer-masterclass.pdf"><img src="examples/screenshots/muon-code.png" width="31%" alt="Newton-Schulz iteration and PyTorch code"></a>
+</p>
+
+**[Open the complete 13-page PDF](examples/pdfs/muon-optimizer-masterclass.pdf)**
