@@ -40,7 +40,7 @@ Page counts are targets measured after compilation. Instructions are currently C
 
 The repository contains the maintainer's two complete skills rather than a third wrapper skill. Together they cover prerequisite-aware explanations, low-dimensional calculations, chapter-by-chapter writing, restrained analogies and source verification.
 
-The project acknowledges [Wudaokou Nash](https://github.com/wdkns/wdkns-skills) and [nuwa-skill](https://github.com/alchaincyf/nuwa-skill) as its two sources of inspiration.
+The project acknowledges [Wudaokou Nash · wdkns-skills](https://github.com/wdkns/wdkns-skills), a collection of Codex skills that turn YouTube and Bilibili lectures, Markdown articles and full video courses into structured LaTeX/PDF coursebooks. Its source-to-rewritten-coursebook workflow and repository organization informed this project. [nuwa-skill](https://github.com/alchaincyf/nuwa-skill) inspired the README narrative and opening presentation.
 
 This repository includes complete sample textbooks, but does not claim measured learning outcomes or university accreditation.
 

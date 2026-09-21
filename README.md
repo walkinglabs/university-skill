@@ -251,7 +251,7 @@ university-skill/
 
 ## 灵感与致谢
 
-- [五道口纳什](https://github.com/wdkns/wdkns-skills)
+- [五道口纳什 · wdkns-skills](https://github.com/wdkns/wdkns-skills)：一组把 YouTube / Bilibili 视频讲座、Markdown 长文和系列课程转成结构化 LaTeX / PDF 教材的 Codex Skills；本项目借鉴了它从素材获取、内容重写到可交付 PDF 的完整链路与仓库组织方式。
 - [女娲.skill](https://github.com/alchaincyf/nuwa-skill)：README 的叙事编排与开场动效形式。
 
 当前为初始化版本，不代表大学认证或真实教授授课；教学效果仍需实际学习验证。
