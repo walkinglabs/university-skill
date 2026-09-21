@@ -26,7 +26,7 @@
 
 **Put a university professor in your AI. Turn any topic into a real university lecture.**
 
-<sub>内含两个可独立安装的 Agent Skills：深度技术教材 + 40 页零基础讲义。</sub>
+<sub>两个可独立安装的 Agent Skills：约 20 页快速阅读 · 超过 40 页系统讲解。</sub>
 
 <br />
 
@@ -165,7 +165,7 @@ cp -R university-skill/skills/university-coursebook ~/.codex/skills/
 
 ### 方式三：作为参考资料使用
 
-如果助手不支持自动加载技能，可以直接提供 [深度技术教材 SKILL.md](skills/university-textbook/SKILL.md) 或 [40 页课本 SKILL.md](skills/university-coursebook/SKILL.md)。每个技能所需的指南和模板都放在自己的目录内。
+如果助手不支持自动加载技能，可以直接提供 [约 20 页快速阅读 SKILL.md](skills/university-textbook/SKILL.md) 或 [超过 40 页系统讲解 SKILL.md](skills/university-coursebook/SKILL.md)。每个技能所需的指南和模板都放在自己的目录内。
 
 ---
 
@@ -183,22 +183,29 @@ cp -R university-skill/skills/university-coursebook ~/.codex/skills/
 
 ## 两个 Skill 怎么选
 
+**想先快速读懂，选 `university-textbook`：约 20 页。想从零系统学透，选 `university-coursebook`：超过 40 页。**
+
 | Skill | 什么时候用 | 核心交付 |
-| --- | --- |
-| [`university-textbook`](skills/university-textbook/SKILL.md) | 想从机制一路学到数学推导、代码和论文 | 25–35+ 页深度技术教材 |
-| [`university-coursebook`](skills/university-coursebook/SKILL.md) | 零基础入门，希望高中生也能一路读懂 | 40 页量级通识课本与 PDF |
+| --- | --- | --- |
+| [`university-textbook`](skills/university-textbook/SKILL.md) | 快速入门或阅读前预习，集中理解一个主题的关键原理 | 约 20 页的精简课本，保留关键推导、代表性手算与代码 |
+| [`university-coursebook`](skills/university-coursebook/SKILL.md) | 从零系统学习，需要充分铺垫、逐层解释和完整练习 | 超过 40 页的系统课本，包含前置知识、完整机制、实操与附录 |
 
 两者都遵循“直觉 → 低维手算 → 严格定义 → 实现与边界”的教授式教学路径，并带齐自身需要的提示词、排版规范和参考文件。
+
+```text
+用 university-textbook 写一本约 20 页的 PDF，帮我快速读懂 JEPA 的核心原理。
+用 university-coursebook 写一本超过 40 页的 PDF，从零系统解释蛋白质结构预测与设计 AI4S。
+```
 
 ---
 
 ## 你会得到什么
 
-| | 深度技术教材 | 40 页通识讲义 |
+| | 快速阅读 · university-textbook | 系统讲解 · university-coursebook |
 | --- | --- | --- |
-| 适用 | 从机制走到实现、论文与严格数学 | 从零建立完整领域地图 |
-| 体量 | 约 25–35+ 页 | 约 40 页 |
-| 主线 | 方法、手算、实现、边界 | 六卷递进，附录四件套 |
+| 适用 | 快速把握主题与关键原理 | 从零建立完整领域地图 |
+| 体量 | 约 20 页 | 超过 40 页（>40） |
+| 主线 | 聚焦核心概念、关键推导和一个完整例子 | 充分展开前置知识、机制、实操与附录四件套 |
 | 产物 | LaTeX / PDF / Markdown、代码与推导 | 分卷 LaTeX、PDF、自测与来源导航 |
 
 <sub>页数为写作目标，以最终编译结果为准。非技术主题使用案例、史料与论证，不强行加入数学或代码。</sub>

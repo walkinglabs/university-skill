@@ -12,6 +12,8 @@
 
 Tell your AI what you want to learn. Let it teach from the foundations to the underlying principles and practical examples. Want a course you can keep? Ask it to write a PDF textbook.
 
+**Two formats: a concise, approximately 20-page quick read, or a systematic coursebook of more than 40 pages.**
+
 [中文](README.md) · [University Textbook](skills/university-textbook/SKILL.md) · [University Coursebook](skills/university-coursebook/SKILL.md)
 
 </div>
@@ -33,8 +35,15 @@ Ask an Agent Skills-compatible assistant to install this repository. For manual 
 
 | Bundled skill | Deliverable |
 | --- | --- |
-| `university-textbook` | A 25–35 page technical textbook with derivations, worked calculations, implementation and mathematical foundations |
-| `university-coursebook` | A roughly 40-page, high-school-accessible coursebook with chapter sources, appendices and a compiled PDF |
+| `university-textbook` | An approximately 20-page quick read focused on core concepts, key derivations and representative worked examples |
+| `university-coursebook` | A systematic coursebook of more than 40 pages, with prerequisites, step-by-step explanations, practical work, exercises and complete appendices |
+
+Choose `university-textbook` for a focused introduction or a refresher. Choose `university-coursebook` to study a subject systematically from the foundations.
+
+```text
+Use university-textbook to write an approximately 20-page PDF explaining the core ideas of JEPA.
+Use university-coursebook to write a PDF of more than 40 pages teaching protein structure prediction and design with AI4S from scratch.
+```
 
 Page counts are targets measured after compilation. Instructions are currently Chinese; the assistant should follow the learner's requested language.
 
